@@ -1,0 +1,69 @@
+:root {
+  --kleur-donker: #146A8C;
+  --kleur-midden: #0F7CBF;
+  --kleur-licht: #18A2D9;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.bg-primary {
+  background-color: var(--kleur-donker) !important;
+}
+
+.text-primary {
+  color: var(--kleur-midden) !important;
+}
+
+.btn-accent {
+  background: var(--kleur-licht);
+  color: #fff;
+  border: none;
+}
+
+.btn-accent:hover {
+  background: var(--kleur-midden);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--kleur-donker), var(--kleur-midden));
+  color: white;
+  min-height: 70vh;
+}
+
+.accent {
+  color: var(--kleur-licht);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    text-align: center;
+  }
+}
+.hero {
+  background: linear-gradient(135deg, var(--kleur-donker), var(--kleur-midden));
+  color: white;
+  min-height: 70vh;
+  padding: 4rem 1rem;
+}
+
+.hero img {
+  border: 4px solid var(--kleur-licht);
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+.carousel-item img {
+  max-height: 500px;  /* Of lager: 300px, 350px ... */
+  object-fit: cover;
+}
+
