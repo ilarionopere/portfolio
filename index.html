@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ilario Nopère</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <!-- Bootstrap Icons (voeg toe in <head>) -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="js/script.js" defer></script>
 
 
 </head>
 <body>
   <header class="py-3 bg-primary text-white">
     <nav class="navbar navbar-expand-lg navbar-dark container">
-      <a class="navbar-brand fw-bold" href="index.html">Ilario Nopère</a>
+      <a class="navbar-brand fw-bold" href="index.html"><img src="assets/images/logo.png" alt="logo" style="height: 60px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,13 +26,13 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projecten</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="projecten/index.html">Overzicht</a></li>
-              <li><a class="dropdown-item" href="projecten/project1.html">Project 1</a></li>
-              <li><a class="dropdown-item" href="projecten/project2.html">Project 2</a></li>
-              <li><a class="dropdown-item" href="projecten/project3.html">Project 3</a></li>
-              <li><a class="dropdown-item" href="projecten/project4.html">Project 4</a></li>
-              <li><a class="dropdown-item" href="projecten/project5.html">Project 5</a></li>
-              <li><a class="dropdown-item" href="projecten/project6.html">Project 6</a></li>
+              <li><a class="dropdown-item" href="project_overzicht.html">Overzicht</a></li>
+              <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+              <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+              <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+              <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -40,47 +40,56 @@
       </div>
     </nav>
   </header>
-<div class="color-transition"></div>
   <main>
-   <section class="hero d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start">
-  <img src="assets/images/mijnfoto.jpg" alt="Foto van Ilario" class="rounded-circle img-fluid shadow me-md-5 mb-4 mb-md-0" style="width: 200px; height: 200px; object-fit: cover;">
-  
-  <div>
-    <h1 class="display-5 fw-bold text-white">
-      Hallo, ik ben <span class="accent">Ilario Nopère</span>
-    </h1>
-    <p class="lead text-white">Student • Systeem- en Netwerkbeheer</p>
-    <a href="projecten/index.html" class="btn btn-accent mt-3">Bekijk mijn werk</a>
-  </div>
-</section>
-    <section class="container py-5">
-      <h2 class="text-primary mb-3">Over mij</h2>
-      <p class="mx-auto">Welkom op mijn website! <br>Ik ben Ilario, 23 jaar en studeer Systeem- en Netwerkbeheer aan de AP Hogeschool. <br> Voor mijn studie werkte ik vier jaar als servicetechnieker in de toegangscontrole-sector. <br> Tijdens die periode kwam ik regelmatig in aanraking met netwerken op locatie, <br> wat mijn interesse in IT en netwerkbeheer heeft aangewakkerd. <br>Die nieuwsgierigheid heeft me uiteindelijk doen beslissen om een carrièreswitch te maken en me verder te verdiepen in systeem- en netwerkbeheer.</p>
+    <section class="hero d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start">
+      <img src="assets/images/mijnfoto.jpg" alt="Foto van Ilario" class="rounded-circle img-fluid shadow me-md-5 mb-4 mb-md-0" style="width: 200px; height: 200px; object-fit: cover;">
+      <article>
+        <h1 class="display-5 fw-bold text-white">Hallo, ik ben <span class="lichtblw">Ilario Nopère</span></h1>
+        <p class="lead text-white">Student • Systeem- en Netwerkbeheer</p>
+        <a href="projecten/index.html" class="btn btn-accent mt-3">Bekijk mijn werk</a>
+      </article>
+    </section>
+
+    <section class="container my-5">
+      <h2 class="text-primary mb-4">Over mij</h2>
+      <section class="d-flex flex-column flex-md-row gap-4">
+        <article class="flex-fill">
+          <p>Welkom op mijn website! <br>Ik ben Ilario, 23 jaar en studeer Systeem- en Netwerkbeheer aan de AP Hogeschool. <br> Voor mijn studie werkte ik vier jaar als servicetechnieker in de toegangscontrole-sector. <br> Tijdens die periode kwam ik regelmatig in aanraking met netwerken op locatie, <br> wat mijn interesse in IT en netwerkbeheer heeft aangewakkerd. <br>Die nieuwsgierigheid heeft me uiteindelijk doen beslissen om een carrièreswitch te maken en me verder te verdiepen in systeem- en netwerkbeheer.</p>
+        </article>
+        <aside class="p-3 shadow-sm border rounded" style="min-width: 300px;">
+          <h3 class="text-primary">Contact</h3>
+          <p><strong>Naam:</strong> Ilario Nopère</p>
+          <p><strong>Email:</strong> <a href="mailto:ilarionopere@gmail.com" class="email-link">ilarionopere@gmail.com</a></p>
+          <p><strong>Telefoon:</strong> +32 483 48 47 93</p>
+          <p><strong>Locatie:</strong> België</p>
+          <a href="contact.html" class="btn btn-accent w-100">Contacteer me</a>
+        </aside>
+      </section>
     </section>
   </main>
 
   <footer class="bg-primary text-white text-center py-3">
-    © 2025 Mijn Portfolio. Alle rechten voorbehouden.
+   &copy; <span id="year"></span> Ilario Nopère
   </footer>
 
 
 <aside class="social-aside d-none d-md-flex" aria-label="Sociale media links">
   
-  <a class="btn btn-outline-light" href="https://www.linkedin.com/in/ilario-nopère-b9248b164" target="_blank" rel="noopener noreferrer"
+  <a class="btn btn-outline-light lichtblw" href="https://www.linkedin.com/in/ilario-nopère-b9248b164" target="_blank" rel="noopener noreferrer"
      role="button" aria-label="LinkedIn" data-bs-toggle="tooltip" title="LinkedIn">
-    <i class="bi bi-linkedin fs-5" aria-hidden="true"></i>
+    <i class="bi bi-linkedin lichtblw fs-5" aria-hidden="true"></i>
   </a>
 
 
-  <a class="btn btn-outline-light" href="https://www.instagram.com/nopere.ilario" target="_blank" rel="noopener noreferrer"
+  <a class="btn btn-outline-light lichtblw" href="https://www.instagram.com/nopere.ilario" target="_blank" rel="noopener noreferrer"
      role="button" aria-label="Instagram" data-bs-toggle="tooltip" title="Instagram">
-    <i class="bi bi-instagram fs-5" aria-hidden="true"></i>
+     <i class="bi bi-instagram lichtblw fs-5" aria-hidden="true"></i>
   </a>
 
 
-  <a class="btn btn-outline-light" href="https://wa.me/32483484793" target="_blank" rel="noopener noreferrer"
+  <a class="btn btn-outline-light lichtblw" href="https://wa.me/32483484793" target="_blank" rel="noopener noreferrer"
      role="button" aria-label="WhatsApp" data-bs-toggle="tooltip" title="WhatsApp">
-    <i class="bi bi-whatsapp fs-5" aria-hidden="true"></i>
+    <i class="bi bi-whatsapp lichtblw fs-5" aria-hidden="true"></i>
   </a>
 
 

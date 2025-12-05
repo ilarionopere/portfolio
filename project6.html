@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 6 - Ilario Nopère</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <header class="py-3 bg-primary text-white">
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <a class="navbar-brand fw-bold" href="index.html"><img src="assets/images/logo.png" alt="logo" style="height: 60px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                Projecten
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="project_overzicht.html">Overzicht</a></li>
+                <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+                <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+                <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+                <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+                <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5">
+      <h1 class="text-center text-primary mb-4">Project 6</h2>
+
+      <div id="project6carousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/project6-1.jpg" class="d-block w-100 rounded" alt="Project 6 afbeelding 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/project6-2.jpg" class="d-block w-100 rounded" alt="Project 6 afbeelding 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#project6carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#project6carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <section class="container my-5 d-flex flex-column flex-md-row gap-4">
+        <article>
+          <h2 class="text-primary mb-4">Beschrijving</h2>
+          <p class="mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolorum eaque similique qui doloremque numquam explicabo iure blanditiis ipsum rem consequuntur libero vitae inventore fuga porro, modi, animi amet, odit ad temporibus aliquam distinctio optio! Magnam iusto, dolores qui, doloribus totam eum aliquid asperiores dignissimos aliquam unde quasi cumque quis eaque minus impedit? Cum numquam aspernatur reprehenderit vitae, ullam porro? Corrupti quas facilis ab dolorum quisquam! Dolor sint ratione commodi officiis voluptas in dolore magni sit eveniet quibusdam natus cumque voluptate quaerat laudantium, molestiae cupiditate? Quisquam nisi est adipisci ducimus consequuntur minus quam ipsam laborum unde! Harum incidunt culpa sapiente.</p>
+        </article>
+        <aside class="p-3 shadow-sm border rounded" style="min-width: 300px;">
+          <h3 class="text-primary">Contact</h3>
+          <p><strong>Naam:</strong> Ilario Nopère</p>
+          <p><strong>Email:</strong> <a href="mailto:ilarionopere@gmail.com" class="email-link">ilarionopere@gmail.com</a></p>
+          <p><strong>Telefoon:</strong> +32 483 48 47 93</p>
+          <p><strong>Locatie:</strong> België</p>
+          <a href="contact.html" class="btn btn-accent w-100">Contacteer me</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+      &copy; <span id="year"></span> Ilario Nopère
+    </footer>
+
+    <aside class="social-aside d-none d-md-flex" aria-label="Sociale media links">
+    
+      <a class="btn btn-outline-light" href="https://www.linkedin.com/in/ilario-nopère-b9248b164" target="_blank" rel="noopener noreferrer"
+        role="button" aria-label="LinkedIn" data-bs-toggle="tooltip" title="LinkedIn">
+        <i class="bi bi-linkedin fs-5" aria-hidden="true"></i>
+      </a>
+
+
+      <a class="btn btn-outline-light" href="https://www.instagram.com/nopere.ilario" target="_blank" rel="noopener noreferrer"
+        role="button" aria-label="Instagram" data-bs-toggle="tooltip" title="Instagram">
+        <i class="bi bi-instagram fs-5" aria-hidden="true"></i>
+      </a>
+
+
+      <a class="btn btn-outline-light" href="https://wa.me/32483484793" target="_blank" rel="noopener noreferrer"
+        role="button" aria-label="WhatsApp" data-bs-toggle="tooltip" title="WhatsApp">
+        <i class="bi bi-whatsapp fs-5" aria-hidden="true"></i>
+      </a>
+
+
+    </aside>
+
+  </body>
+</html>
