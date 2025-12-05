@@ -38,74 +38,80 @@ body {
   color: var(--kleur-licht);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  nav ul {
-    text-align: center;
-  }
-}
-.hero {
-  background: linear-gradient(135deg, var(--kleur-donker), var(--kleur-midden));
-  color: white;
-  min-height: 70vh;
-  padding: 4rem 1rem;
+.lichtblw {
+  color:#00d9ff;
 }
 
-.hero img {
-  border: 4px solid var(--kleur-licht);
-  transition: transform 0.3s ease;
-}
-
-.hero img:hover {
-  transform: scale(1.05);
-}
 .carousel-item img {
   max-height: 500px;  
   object-fit: cover;
 }
 
-  
-  .social-aside {
-    right: 1rem; 
-    top: 40%;
-    transform: translateY(-50%);
-    position: fixed;
-    z-index: 1030;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-  }
+ .social-aside {
+  right: 1rem; 
+  top: 40%;
+  transform: translateY(-50%);
+  position: fixed;
+  z-index: 1030;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
 
-  .social-aside .btn {
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0,0,0,.15);
-  }
+.social-aside .btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
 
   
-  @media (max-width: 767.98px) {
-    .social-aside { display: none; }
-  }
+  
 
 
 
 .social-aside a.btn-outline-light {
-  color: #18A2D9 !important;         /* icoonkleur */
-  border-color: #18A2D9 !important;  /* randkleur */
+  color: #18A2D9 !important;        
+  border-color: #18A2D9 !important;
+    box-shadow: 0 2px 6px rgba(255,255,255,.8);
 }
 
 .social-aside a.btn-outline-light:hover {
   background-color: #18A2D9 !important;
-  color: #fff !important;            /* wit icoon bij hover */
+  color: #fff !important;
 }
 
 
+.email-link {
+  color: #146A8C;     
+  text-decoration: none;
+  font-weight: 500;
+}
 
+.email-link:hover {
+  color: #0F7CBF;
+  text-decoration: none;
+}
+
+input, textarea {
+  width: 300px;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.card-img-top {
+    height: 250px;      
+    object-fit: cover; 
+    width: 100%;
+}
